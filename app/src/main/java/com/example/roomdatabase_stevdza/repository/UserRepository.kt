@@ -1,6 +1,8 @@
-package com.example.roomapp.data
+package com.example.roomdatabase_stevdza.repository
 
 import androidx.lifecycle.LiveData
+import com.example.roomdatabase_stevdza.data.UserDao
+import com.example.roomdatabase_stevdza.model.User
 
 class UserRepository(private val userDao: UserDao) {
 

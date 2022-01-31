@@ -10,8 +10,8 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.example.roomapp.data.User
-import com.example.roomapp.data.UserViewModel
+import com.example.roomdatabase_stevdza.model.User
+import com.example.roomdatabase_stevdza.viewmodel.UserViewModel
 import com.example.roomdatabase_stevdza.R
 import com.example.roomdatabase_stevdza.databinding.FragmentAddBinding
 

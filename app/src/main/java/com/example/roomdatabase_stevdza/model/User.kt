@@ -1,4 +1,4 @@
-package com.example.roomapp.data
+package com.example.roomdatabase_stevdza.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
