@@ -3,7 +3,9 @@ package com.example.roomdatabase_stevdza.fragment.list
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.roomdatabase_stevdza.R
 import com.example.roomdatabase_stevdza.model.User
 import com.example.roomdatabase_stevdza.databinding.CustomRowBinding
 
@@ -22,6 +24,10 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
             binding.tvFirstName.text = userList[position].firstName
             binding.lastNameTxt.text = userList[position].lastName
             binding.ageTxt.text = userList[position].age.toString()
+
+            binding.rowLayout.setOnClickListener {
+                holder.itemView.findNavController().navigate(R.id.action_listFragment_to_updateFragment)
+            }
         }
     }
 
